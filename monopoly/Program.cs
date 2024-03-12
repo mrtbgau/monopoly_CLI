@@ -1,5 +1,5 @@
 ﻿using monopoly.classes;
 
-Dice dice = new();
+Dices dices = new();
 
-Console.WriteLine(dice.Roll()); 
+Console.WriteLine(dices.Roll());

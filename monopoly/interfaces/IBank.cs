@@ -8,7 +8,11 @@ namespace monopoly.interfaces
 {
     public interface IBank
     {
-        public bool GiveMoney(int amount);
-        public bool TakeMoney(int amount);
+        public bool Cashout(int amount);
+        public bool Cashin(int amount);
+        public bool GiveHouse();
+        public bool TakeHouse();
+        public bool GiveHotel();
+        public bool TakeHotel();
     }
 }
