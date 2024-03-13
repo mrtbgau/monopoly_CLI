@@ -20,7 +20,7 @@ namespace monopoly.classes
         }
 
         public bool Is_double() {  
-            return dice_1.value == dice_2.value;
+            return dice_1.Value == dice_2.Value;
         }
     }
 }

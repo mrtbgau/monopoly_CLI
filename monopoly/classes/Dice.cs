@@ -9,14 +9,14 @@ namespace monopoly.classes
 {
     public class Dice() : IDice
     {
-        public readonly int faces = 6;
-        public int value;
+        public int NbFaces { get; } = 6;
+        public int Value { get; set; }
 
         public int Roll()
         {
             Random rnd = new();
-            value = rnd.Next(1, faces + 1);
-            return value;
+            Value = rnd.Next(1, NbFaces + 1);
+            return Value;
         }
     }
 }
