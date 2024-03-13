@@ -16,5 +16,14 @@ namespace monopoly.tests
 
             Assert.True(nb == dices.result);
         }
+
+        [Fact]
+        public void TestIsDouble()
+        {
+            Dice dice1 = new();
+            Dice dice2 = new();
+
+            Assert.True(dice1.Value == dice2.Value);
+        }
     }
 }
