@@ -20,10 +20,11 @@ namespace monopoly.tests
         [Fact]
         public void TestIsDouble()
         {
-            Dice dice1 = new();
-            Dice dice2 = new();
+            Dices dices = new();
 
-            Assert.True(dice1.Value == dice2.Value);
+            dices.dice_1.Value = dices.dice_2.Value = 1;
+
+            Assert.True(dices.Is_double());
         }
     }
 }
